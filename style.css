@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
-
 body{
     font-family: 'Cinzel', serif;
     background-color: #0a0104;
@@ -223,15 +222,19 @@ display: grid;
    
 }
 
-.video{
+.video iframe{
     box-sizing: border-box;
     margin-top: -300px;
+    width: 550px;
+    height: 300px;
     
 }
 
-.video2{
+.video2 iframe{
     box-sizing: border-box;
     margin-top: -300px;
+    width: 550px;
+    height: 300px;
 }
 
 .center-img3 {
@@ -250,7 +253,6 @@ display: grid;
     margin-left: -10px;
  
 }
-
 .footer {
     position: absolute;
     bottom: 0;
@@ -262,4 +264,32 @@ display: grid;
     margin-left: 500px;
     font-family: arial;
 }
-
+/* Media queries */
+@media (max-width: 480px) {
+    .intro1{
+        margin-top: 220px;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .intro-hint {
+        max-width: 350px;
+        text-align: center;
+    }
+    .grid {
+        margin-top: 400px;
+    }
+    .video iframe{
+        margin-top: -200px;
+        margin-bottom: 50px;
+        width: 400px;
+    }
+    .video2 iframe{
+        margin-bottom: -200px;
+        width: 400px;
+    }
+    .center-img {
+        width: 350px;
+        margin-left: 10px;
+    }
+}
